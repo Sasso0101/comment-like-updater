@@ -5,7 +5,7 @@ Based on a challenge by [Overvolt Official](https://t.me/overVoltOfficial/4912).
 
 ## How it works
 The program's logic is really simple and follows this high-level flowchart:
-![Diagram](https://raw.githubusercontent.com/Sasso0101/)
+![Diagram](https://raw.githubusercontent.com/Sasso0101/comment-like-updater/main/docs/diagram.png)
 
 All of the programs functions are divided in... well, functions. Each function [does only one thing](https://en.wikipedia.org/wiki/Single-responsibility_principle), which helps keeking the code clean and tidy. The script uses 2 helper files to store che OAuth secrets that Google provides (more on that later) and the OAuth credentials we got from the user.
 
