@@ -18,7 +18,7 @@ Libraries and modules used:
  ## 🚀 Getting it working 🚀
 To get this working you need a recent version of Python 3 and pip.
 Steps to install:
-1. Clone or download the repo from Github
+1. Clone or download the repo from GitHub
     `git clone https://github.com/Sasso0101/comment-like-updater.git`
 2. Generate a new OAuth client ID from [Google Console](https://console.developers.google.com/apis/credentials), choose Desktop Application as the type, download the JSON file and save it in the downloaded folder as `secrets.json`
 3. Enable [YouTube's API](https://console.developers.google.com/apis/library/youtube.googleapis.com?id=125bab65-cfb6-4f25-9826-4dcc309bc508)
