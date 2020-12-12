@@ -15,7 +15,7 @@ Libraries and modules used:
  - [Google's Auth Flow Python module](https://google-auth-oauthlib.readthedocs.io/en/latest/reference/google_auth_oauthlib.flow.html) for the authentication part
  - [Python's Request library](https://requests.readthedocs.io/en/master/) to make the requests
  - [Google's API Client Discovery](https://googleapis.github.io/google-api-python-client/docs/epy/googleapiclient.discovery-module.html) and [error handling modules](https://googleapis.github.io/google-api-python-client/docs/epy/googleapiclient.errors-module.html) for interacting with YouTube's APIs
- ## Getting it working
+ ## Getting it working 🚀
 To get this working you need a recent version of Python 3 and pip.
 Steps to install:
 1. Clone or download the repo from Github
