@@ -28,3 +28,4 @@ Steps to install:
 6. Run the script! Follow the instructions to authorize the application. This is needed only once. The first time you'll run the script it'll also create a new comment if you didn't provide a valid `commentID`. To update the comment instead of creating new ones just paste the `commentID` you got in the first request into the code and now you're ready to go!
 
 If you have any questions write me on [Telegram](https://t.me/sasso0101), I'll be happy to help! :)
+All the code is licensed under [Apache License 2.0](https://github.com/Sasso0101/comment-like-updater/blob/main/LICENSE).
