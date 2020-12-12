@@ -38,7 +38,7 @@ def getLikes(youtube, threadID):
 def getMessage(likes):
     lastUpdated = datetime.now(tz)
     lastUpdated= lastUpdated.strftime("%d/%m/%Y %H:%M")
-    message = "🤖 Lo hai detto *" + str(likes) + " volte* ! 🤖\n\n\n_Ultimo aggiornamento: " + lastUpdated + "_\nQuesto messaggio si aggiorna automaticamente ogni 10 minuti perché Google è tirchia e se faccio più richieste mi fa pagare 😂\nSabato pubblicherò il sorgente su Github per chi è curioso (spoiler: è uno script python 🐍)"
+    message = "🤖 Lo hai detto *" + str(likes) + " volte* ! 🤖\n\n\n_Ultimo aggiornamento: " + lastUpdated + "_\nQuesto messaggio si aggiorna automaticamente ogni 10 minuti perché Google è tirchia e se faccio più richieste mi fa pagare 😂\nScritto in python 🐍 e hostato su GitHub :)\nhttps://github.com/Sasso0101/comment-like-updater"
     return message
 
 ''' Insert a new reply in the given thread '''
