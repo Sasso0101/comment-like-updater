@@ -1,21 +1,21 @@
-# Comment like updater
+# 💬 Comment like updater 💬
 A simple Python comment updater based on the current like count of the comment's parent.
 Uses [Google's Python Library](https://github.com/googleapis/google-api-python-client) to interface with YouTube APIs.
 Based on a challenge started by [Overvolt Official](https://t.me/overVoltOfficial/4912).
 
-## How it works
+## ⚙ How it works ⚙
 The program's logic is really simple and follows this high-level flowchart:
 ![Diagram](https://raw.githubusercontent.com/Sasso0101/comment-like-updater/main/docs/diagram.png)
 
 All the programs functions are divided in... well, functions. Each function [does only one thing](https://en.wikipedia.org/wiki/Single-responsibility_principle), which helps keeking the code clean and tidy. The script uses 2 helper files to store the OAuth secrets (`secrets.json` and `credentials.json`) that Google provides and the OAuth credentials we got from the user (more on that later).
 
-### Python stuff
+### 🐍 Python stuff 🐍
 Libraries and modules used:
  - [Google's OAuth Python module](https://google-auth.readthedocs.io/en/latest/reference/google.oauth2.credentials.html) to manage the OAuth credentials
  - [Google's Auth Flow Python module](https://google-auth-oauthlib.readthedocs.io/en/latest/reference/google_auth_oauthlib.flow.html) for the authentication part
  - [Python's Request library](https://requests.readthedocs.io/en/master/) to make the requests
  - [Google's API Client Discovery](https://googleapis.github.io/google-api-python-client/docs/epy/googleapiclient.discovery-module.html) and [error handling modules](https://googleapis.github.io/google-api-python-client/docs/epy/googleapiclient.errors-module.html) for interacting with YouTube's APIs
- ## Getting it working 🚀
+ ## 🚀 Getting it working 🚀
 To get this working you need a recent version of Python 3 and pip.
 Steps to install:
 1. Clone or download the repo from Github
