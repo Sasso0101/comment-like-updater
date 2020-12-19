@@ -15,14 +15,28 @@ def getCredentials():
     # Checks if we altredy have OAuth credentials
     if not path.exists(credentials_file):
         # If they don't exist start and auth flow in the console
-        flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
-                    secrets_file, scopes)
-        credentials = flow.run_console()
-        with open(credentials_file, "w") as f:
-            f.write(credentials.to_json())
+        credentials = login(secrets_file, scopes, credentials_file)
     else:
         # Otherwise just get the credentials from the JSON file
-        credentials = google.oauth2.credentials.Credentials.from_authorized_user_file(credentials_file, scopes)
+        try:
+            credentials = google.oauth2.credentials.Credentials.from_authorized_user_file(credentials_file, scopes)
+            if not(credentials.valid):
+                request = google.auth.transport.requests.Request()
+                credentials.refresh(request)
+        except google.auth.exceptions.RefreshError:
+            # If the credentials can't be refershed initiate a new oAuth flow
+            credentials = login(secrets_file, scopes, credentials_file)
+
+    return credentials
+
+''' Starts an start and auth flow in the console
+    Returns a credentials object and updates the credentials file '''
+def login(secrets_file, scopes, credentials_file):
+    flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+    secrets_file, scopes)
+    credentials = flow.run_console()
+    with open(credentials_file, "w") as f:
+        f.write(credentials.to_json())
     return credentials
 
 ''' Returns current number of likes '''
